@@ -16,8 +16,9 @@ services:
       - key: CLIENT_URL
         value: https://projectmgt-web.onrender.com
 
-  - type: static
+  - type: web
     name: projectmgt-web
+    runtime: static
     rootDir: apps/web
     buildCommand: npm install && npm run build
     staticPublishPath: dist
